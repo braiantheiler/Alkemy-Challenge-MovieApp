@@ -16,7 +16,7 @@ class MovieListViewController: UIViewController {
     private var service = MovieListService()
     private var viewModel : MovieListViewModel?
     
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel = MovieListViewModel(service: self.service, delegate: self)
@@ -73,7 +73,11 @@ extension MovieListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieListTableViewCell", for: indexPath) as! MovieListTableViewCell
         
         cell.movieName.text = self.viewModel?.getMovie(at: indexPath.row).title
-//        cell.movieImage.image = self.
+        if let url = self.viewModel?.getMovie(at: indexPath.row).backdropPath, let fullUrl = URL(string: Constants().movieImageUrlBase + url){
+            cell.movieImage.load(url: fullUrl)
+        }
+        
+        
         
         return cell
 

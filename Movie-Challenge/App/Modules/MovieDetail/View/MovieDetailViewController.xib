@@ -52,7 +52,7 @@
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugT-pP-u8f">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugT-pP-u8f">
                             <rect key="frame" x="30" y="490" width="361" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -113,6 +113,7 @@
                         <constraint firstItem="my8-Ec-ybW" firstAttribute="top" secondItem="hTE-5Q-rVN" secondAttribute="bottom" id="L43-ER-U2B"/>
                         <constraint firstAttribute="trailing" secondItem="s22-vZ-RnZ" secondAttribute="trailing" constant="20" id="Ldh-Bn-8n2"/>
                         <constraint firstAttribute="trailing" secondItem="ugT-pP-u8f" secondAttribute="trailing" constant="30" id="M6V-qf-4oo"/>
+                        <constraint firstAttribute="trailing" secondItem="NY7-iZ-42X" secondAttribute="trailing" id="MAq-ai-NRk"/>
                         <constraint firstItem="hTE-5Q-rVN" firstAttribute="leading" secondItem="hyh-Iz-mQz" secondAttribute="leading" constant="20" id="Nne-7Q-CFp"/>
                         <constraint firstAttribute="trailing" secondItem="KGe-FO-yvh" secondAttribute="trailing" constant="20" id="RIN-or-OMf"/>
                         <constraint firstItem="s22-vZ-RnZ" firstAttribute="top" secondItem="ivI-Md-UW5" secondAttribute="bottom" id="TNL-Bx-679"/>

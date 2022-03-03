@@ -53,6 +53,10 @@ extension MovieDetailViewController: MovieDetailDelegate {
         self.movieOriginalLanguage.text = movie.originalLanguage
         self.moviePopularity.text = "\(String(describing:movie.popularity!))"
         self.movieOverview.text = movie.overview
+        if let url = movie.backdropPath, let fullUrl = URL(string: Constants().movieImageUrlBase + url){
+            self.movieImage.load(url: fullUrl)
+        }
+        
     }
     
     func showError() {
@@ -60,18 +64,3 @@ extension MovieDetailViewController: MovieDetailDelegate {
     }
 }
 
-//extension UIImageView {
-//    func loadFrom(movieImageUrlBase: String) {
-//        guard let urlImagen = URL(string: movieImageUrlBase) else {
-//            return
-//        }
-//        
-//        DispatchQueue.main.async { [weak self] in
-//            if let imagenData = try? Data(contentsOf: urlImagen) {
-//                if let loadedImage = UIImage(data: imagenData) {
-//                    self?.image = loadedImage
-//                }
-//            }
-//        }
-//    }
-//}
